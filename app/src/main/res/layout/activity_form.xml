@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".model.FormActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/form_nombrePizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/textview"
+                android:textColor="@color/colorTexto01"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/form_tamaños"
+                app:layout_constraintStart_toStartOf="@+id/form_tamaños"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/form_tamaños"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/elige_un_tamano"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+                app:layout_constraintTop_toBottomOf="@+id/form_nombrePizza" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/form_tamaños"
+                tools:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/form_tamano_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/peque_a_15"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/form_tamano_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mediana_20"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/form_tamano_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/familiar_23"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/form_boton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent"
+                android:elevation="50dp"
+                android:text="@string/hacer_pedido"
+                android:textColor="@color/White"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/form_precio"
+                app:layout_constraintHorizontal_bias="0.069"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/elige_ingredientes_extra_2"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+                app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <TextView
+                android:id="@+id/form_EligeBebida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/elige_bebida"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:dividerPadding="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/form_EligeBebida"
+                app:layout_constraintStart_toStartOf="@+id/form_EligeBebida"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Switch
+                        android:id="@+id/SwichOlivas"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:padding="10dp"
+                        android:text="@string/olivas" />
+
+                    <Switch
+                        android:id="@+id/SwitchPeperoni"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/peperoni" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Switch
+                        android:id="@+id/SwitchJamon"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/jam_n" />
+
+                    <Switch
+                        android:id="@+id/SwitchPollo"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/pollo" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Switch
+                        android:id="@+id/SwitchPepino"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/pepino" />
+
+                    <Switch
+                        android:id="@+id/SwitchHuevo"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/huevo_frito" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/form_boton"
+                app:layout_constraintStart_toStartOf="@+id/form_boton"
+                app:layout_constraintTop_toBottomOf="@+id/form_EligeBebida">
+
+                <CheckBox
+                    android:id="@+id/checkBoxAgua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/agua_2" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPepsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/pepsi_3" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxCerveza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/cerveza_4" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/form_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="0 €"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/form_boton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/form_boton" />
+
+            <ImageView
+                android:id="@+id/form_imageView"
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.050000012"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:contentDescription="@string/hey"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

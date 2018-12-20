@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Entrega04</string>
+    <string name="action_settings">Settings</string>
+    <string name="image">Image</string>
+    <string name="olivas">Olivas</string>
+    <string name="peperoni">Peperoni</string>
+    <string name="jam_n">Jamón</string>
+    <string name="pollo">Pollo</string>
+    <string name="pepino">Piña</string>
+    <string name="huevo_frito">Huevo frito</string>
+    <string name="elige_bebida">Elige Bebida</string>
+    <string name="elige_ingredientes_extra_2">Elige Ingredientes Extra [+2€]</string>
+    <string name="peque_a_15">Pequeña [15€]</string>
+    <string name="mediana_20">Mediana [20€]</string>
+    <string name="familiar_23">Familiar [23€]</string>
+    <string name="agua_2">Agua [2€]</string>
+    <string name="pepsi_3">Pepsi [3€]</string>
+    <string name="cerveza_4">Cerveza [4€]</string>
+    <string name="hacer_pedido">Hacer Pedido</string>
+    <string name="textview">text</string>
+    <string name="elige_un_tamano">Elige un tamaño</string>
+    <string name="hey">hey</string>
+    <string name="ha_sido_enviada">¡HA SIDO ENVIADA!</string>
+    <string name="felicidades">¡FELICIDADES!</string>
+    <string name="con">con</string>
+    <string name="y_tu">y tu</string>
+    <string name="prepara">Prepara</string>
+    <string name="tu_pizza">tu pizza</string>
+    <string name="textview01">TextView01</string>
+    <string name="textview02">TextView02</string>
+    <string name="textview03">TextView03</string>
+    <string name="textview04">TextView04</string>
+</resources>
