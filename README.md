@@ -1,4 +1,4 @@
-# Proyecto 00 - PIzzas
+# Proyecto 00 - Pizzas
 
 
 ### RecyclerView ✓
