@@ -1,2 +1,9 @@
-# Entrega04
-entrega 04 PIzzas
+# Proyecto 00 - PIzzas
+
+
+### RecyclerView ✓
+
+### CardView ✓
+
+### SharedPreferences✓
+
